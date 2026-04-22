@@ -1,3 +1,5 @@
+//USES SLIDING WINDOW APPROACH
+
 class Solution {
     public int lengthOfLongestSubstring(String s) {
        Set <Character> set =new HashSet<>();
