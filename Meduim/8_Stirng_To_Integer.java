@@ -68,6 +68,8 @@ class Solution {
 
 
 //Optimal solution-----used pointer
+O(n)---time
+O(1)---space
 class Solution {
     public int myAtoi(String s) {
         int i = 0, n = s.length();
