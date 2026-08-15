@@ -21,3 +21,30 @@ class Solution {
        return cal;
     }
 }
+
+lass Solution {
+    public int longestConsecutive(int[] nums) {
+        if(nums.length==0)return 0;
+       Set<Integer> st=new HashSet<>();
+       for(int i:nums){
+        st.add(i);
+       }
+       
+    int count=1;
+       for(int i:st){
+        
+       if(!st.contains(i - 1)) {
+
+                int next = i;
+                int lon = 1;
+
+                while(st.contains(next + 1)) {
+                    lon++;
+                    next++;
+                } 
+         count=Math.max(count,lon);
+        }
+       }
+       return count;
+    }
+}
